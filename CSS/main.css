@@ -1,0 +1,41 @@
+body {
+    background-color: #EFF6FF;
+}
+
+/* Navbar background + shadow */
+.navbar {
+    background-color: #60A5FA; /* Soft, calm blue*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem 0;
+}
+
+/* Center container */
+.navbar-container {
+    max-width: 1000px;
+    margin: 0 auto;       /* Center horizontally */
+    display: flex;        /* Flex layout */
+    justify-content: center; /* Center the links */
+    gap: 2rem;            /* Space between links */
+}
+
+/* Links styling */
+.nav-link {
+    display: flex;
+    align-items: center;   /* Vertical alignment */
+    gap: 0.5rem;           /* Space between icon and text */
+    color: #333333;        /* Charcoal color text (Softer then black) */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Hover effect over icon*/
+.nav-link:hover {
+    color: #1D4ED8;        /* Richer, deeper blue color on hover */
+}
+
+/* Icon size */
+.nav-icon {
+    width: 32px;
+    height: 32px;
+}
