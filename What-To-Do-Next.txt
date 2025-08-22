@@ -1,0 +1,6 @@
+- Fix responsive design for smaller and medium screens. // Done/updating it
+- Fix a hamburger menu for smaller and medium screens 
+    (3 lines you click and the NavBar expands and collaps)
+- Fix bg color
+- Add cover image for projects cards // Done
+- Add a demo video for the projects // Done
