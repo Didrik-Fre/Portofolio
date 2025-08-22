@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="CSS/main.css">
-    <title>Portofolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/main.css">
+  <title>Portfolio</title>
 </head>
 <body>
 
@@ -16,74 +16,87 @@
   <div class="navbar-container">
     <!-- GitHub Link -->
     <a href="https://github.com/Didrik-Fre" target="_blank" rel="noopener noreferrer" class="nav-link">
-      <img src="Images/PNG/GitHub-Logo.png" alt="GitHub Icon" class="nav-icon">
+      <img src="Images/Logo-Icons/GitHub-Logo.png" alt="GitHub Icon" class="nav-icon">
       GitHub
     </a>
+
     <!-- LinkedIn Link -->
     <a href="https://linkedin.com/in/didrik-fredriksen-7811a5249" target="_blank" rel="noopener noreferrer" class="nav-link">
-      <img src="Images/PNG/LinkedIn-Logo.png" alt="LinkedIn Icon" class="nav-icon">
+      <img src="Images/Logo-Icons/LinkedIn-Logo.png" alt="LinkedIn Icon" class="nav-icon">
       LinkedIn
     </a>
+
+    <!-- Gmail Link -->
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=didrik.fredriksen00@gmail.com" target="_blank" class="nav-link">
+      <img src="Images/Logo-Icons/Gmail-Logo.webp" alt="Gmail Icon" class="nav-icon">
+      Gmail
+    </a>
+
   </div>
 </nav>
 
-<main>
-    <section class="about-section">
-        <div class="about-image">
-            <img src="Images/Profile-Pic.jpeg" alt="Picture of Me">
-        </div>
-        <div class="about-text">
-            <h2 id="about-header"></h2>
-            <p>Hello! I'm Didrik, a software developer based in Stockholm. 
-                I enjoy building clean, user-friendly websites and learning new technologies. 
-                My goal is to create elegant and functional web solutions.</p>
-        </div>
-    </section>
 
+<main>
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-image">
+      <img src="Images/Profile-Pic.jpeg" alt="Picture of Me">
+    </div>
+    <div class="about-text">
+      <h2 id="about-header"></h2>
+      <p>Hello! I'm Didrik, a software developer based in Stockholm. I enjoy building clean, user-friendly websites and learning new technologies. My goal is to create elegant and functional web solutions.</p>
+    </div>
+  </section>
 </main>
 
+<!-- Projects Section -->
 <section id="projects">
   <h2>My Projects</h2>
 
   <!-- Project 1 -->
   <div class="project-card">
-    <h3>Simple Spotify Clone</h3>
-    <a href="projects/project1/" target="_blank">
-      <img src="Images/Projects/project1-cover.png" alt="Project One Cover">
-    </a>
-    <p>This project is a web app that is a simple Spotify clone, 
-        using JavaScript to make it functional to play songs, pause, controle volume
-        and drag on the timeline. <br> <!-- Will fix breaker in CSSs-->
-        Click the image to see a video demonstration.</p>
+    <h3>Project 1 - Spotify Clone</h3>
+    <img src="Images/Project-Images/Spotify.png" alt="Project 1 Cover" onclick="openModal('Images/Project-Vidoes/Spotify-Clone.mp4')">
+    <p class="about-p">A simple Spotify clone where you can play and pause songs, adjust the volume, drag along the timeline, and search for tracks. Built using HTML, CSS, and JavaScript.</p>
+    <p class="click-p">Click the cover image to see a demo video.</p>
   </div>
 
   <!-- Project 2 -->
   <div class="project-card">
-    <h3>Fetching Data From API</h3>
-    <a href="projects/project2/" target="_blank">
-      <img src="Images/Projects/project2-cover.png" alt="Project Two Cover">
-    </a>
-    <p>This project is a website where you can search up different recipes
-        so you can see how to make it and what ingredients you need for it,
-        by using and open API we have taken information from that and used 
-        that for out code. <br> <!-- Will fix breaker in CSSs-->
-        Click the image for a video demo.</p>
+    <h3>Project 2 - Recipe Finder</h3>
+    <img src="Images/Project-Images/API.png" alt="Project 2 Cover" onclick="openModal('Images/Project-Vidoes/Recipe-finder.mp4')">
+    <p class="about-p">A recipe search app using an open API to fetch data. You can search for different recipes, view ingredients, and see step-by-step instructions. Built with HTML, Tailwind CSS, and JavaScript.</p>
+    <p class="click-p">Click the cover image to see a demo video.</p>
   </div>
 
   <!-- Project 3 -->
   <div class="project-card">
-    <h3>Frontend Youtube Notetaker</h3>
-    <a href="projects/project3/" target="_blank">
-      <img src="Images/Projects/project3-cover.png" alt="Project Three Cover">
-    </a>
-    <p>This project is a website app where you can watch a YouTube video,
-        and at the same time take notes on the side.
-        This is a very simple website app using HTML, Tailwind and JavaScript. <br> <!-- Will fix breaker in CSSs-->
-        Click the image to see how it works.</p>
+    <h3>Project 3 - YouTube NoteTaker</h3>
+    <img src="Images/Project-Images/YouTube-Notetaker.png" alt="Project 3 Cover" onclick="openModal('Images/Project-Vidoes/YouTube-NoteTaker.mp4')">
+    <p class="about-p">An app where you can watch a YouTube video while taking notes simultaneously, making it easier to organize your learning or research. Built with HTML, Tailwind CSS, and JavaScript.</p>
+    <p class="click-p">Click the cover image to see a demo video.</p>
+  </div>
+
+  <!-- Project 4 -->
+  <div class="project-card">
+    <h3>Project 4 - Simple ToDo List</h3>
+    <img src="Images/Project-Images/ToDo-List.png" alt="Project 4 Cover" onclick="openModal('Images/Project-Vidoes/ToDo-List.mp4')">
+    <p class="about-p">A straightforward to-do list app where you can add tasks and mark them as complete. Completed tasks get a line through to indicate they’re done. Built using HTML, Tailwind CSS, and JavaScript.</p>
+    <p class="click-p">Click the cover image to see a demo video.</p>
+  </div>
+
+  <!-- Single Modal for all projects -->
+  <div id="videoModal" class="modal" onclick="clickOutside(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <video id="projectVideo" controls>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
 </section>
 
-    
-    <script src="JS/main.js"></script>
+<script src="JS/main.js"></script>
 </body>
 </html>
