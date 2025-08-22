@@ -2,17 +2,18 @@ const text = "About Me";
 const header = document.querySelector("#about-header");
 let index = 0;
 
-// Add blinking class before typing starts
-header.classList.add("blink");
-
 function typeWriter() {
   if (index < text.length) {
-    header.innerHTML += text.charAt(index);
+    header.innerHTML = text.substring(0, index + 1); // progressively show text
     index++;
-    setTimeout(typeWriter, 170);
+    setTimeout(typeWriter, 170); // typing speed
   } else {
-    // Remove blinking class after typing is done
-    header.classList.remove("blink");
+    // Wait before restarting
+    setTimeout(() => {
+      index = 0;
+      header.innerHTML = "";
+      typeWriter(); // restart typing
+    }, 2000); // 2 sec pause before looping again
   }
 }
 
