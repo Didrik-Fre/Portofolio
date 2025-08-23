@@ -24,9 +24,9 @@ This is my personal portfolio website, designed to highlight my software develop
 ## Project Structure
 
 - **index.html** – Main webpage  
-- **CSS/** – Styling files  
-- **CSS-Color/** – CSS color references and W3Schools guide  
-- **JS/** – JavaScript functionality  
+- **CSS/** – Styling files for navbar, cards, hover effects, background, etc.  
+- **CSS-Color/** – Reference folder for all CSS colors used and W3Schools guide  
+- **JS/** – JavaScript functionality (modals, interactivity)  
 - **Images/** – Media assets used in the portfolio:  
   - **Logo-Icons/** – Social media and email icons  
   - **Project-Images/** – Screenshots of projects  
@@ -39,18 +39,3 @@ This is my personal portfolio website, designed to highlight my software develop
 1. Clone the repository:  
    ```bash
    git clone https://github.com/yourusername/portfolio.git
-   ```
-2. Open `index.html` in your browser to view the portfolio.
-
-## Commit Notes
-
-This section explains the main commits for folder and file updates:
-
-- **Main profile image for portfolio site** – Added `Profile-Pic.jpeg`.  
-- **Contains icons and vector graphics used in projects and site** – Added `Images/SVG/` folder with SVG icons.  
-- **Contains cover images and screenshots for portfolio projects** – Added `Images/Project-Images/`.  
-- **Contains demo and walkthrough videos for portfolio projects** – Added `Images/Project-Videos/`.  
-- **Add CSS-Color folder containing color codes and W3Schools reference** – Added `CSS-Color/` folder.  
-- **Add Logo-Icons for social media and email links** – Added `Images/Logo-Icons/`.  
-- **Enhance README with project details and folder notes** – Updated README with descriptions, project structure, and commit notes.  
-
