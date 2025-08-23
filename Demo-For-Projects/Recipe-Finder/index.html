@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body>
+    
+    <nav class="bg-rose-500 p-4 text-white">
+        <h1 class="text-xl">Recipe Finder</h1>
+    </nav>
+
+    <header class="flex justify-center items-center h-[25rem] bg-gray-200">
+        <div class="flex flex-col gap-6 text-center">
+            <h1 class="text-4xl">Find Your Recipe</h1>
+            <input id="search-input" type="text" placeholder="Search Recipe" />
+            <button id="search-button" class="px-6 py-2 bg-rose-500 text-white hover:bg-rose-500/80 flex flex-col items-center">
+                <span class="text-lg">Lets Cook!</span>
+                <span class="text.sm">Click Me!</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="m-12">
+        <div id="no-search-text" class="text-center">
+            <h1 class="text-2xl">You haven't searched yet!</h1>
+        </div>
+        <div id="recipe-item">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <img id="recipe-image" class="w-full h-[20rem] object-cover" />
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h1 id="recipe-name" class="text-2xl"></h1>
+                    <p>
+                        <b>Category</b>: <span id="recipe-category"></span>
+                    </p>
+                    <!-- My own code/expanding this code -->
+                    <p>
+                        <b>Area:</b> <span id="recipe-area"></span>
+                    </p>
+                    <p>
+                        <b>Tags:</b> <span id="recipe-tags"></span>
+                    </p>
+                    <p class="italic">
+                        <b>Source:</b> <span id="recipe-source"></span>
+                    </p>
+                    <p id="recipe-instructions"></p>
+
+                    <div id="recipe-ingredients-measurements" class="flex gap-8 items-start">
+                        <div id="recipe-ingredients" class="w-1/2 bg-gray-100 p-4 hover:scale-105 transition-transform duration-200">
+                        </div>
+                        <div id="recipe-measurements" class="w-1/2 bg-gray-100 p-4 hover:scale-105 transition-transform duration-200">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
